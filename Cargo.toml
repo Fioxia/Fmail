@@ -1,0 +1,6 @@
+[workspace]
+members = [
+    "smtp",
+    "send",
+    "receive",
+]
