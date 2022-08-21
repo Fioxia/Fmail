@@ -1,8 +1,23 @@
 [package]
-name = "smtp"
+name = "mail_exchange"
 version = "0.1.0"
 edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+dotenv = "0.15"
+# db = {path = "../db"}
+
+# diesel = { version = "1.4",  features = ["postgres"] }
+tokio = {version = "1.17", features = ["full"] }
+sqlx = { version = "0.5", features = [ "runtime-tokio-rustls", "postgres" ] }
+native-tls = "*"
+
+tokio-rustls = "0.23"
+rustls = "0.20"
+rustls-pemfile = "0.3"
+webpki-roots = "0.22"
+
+trust-dns-resolver = "0.21"
+chrono = "0.4"
